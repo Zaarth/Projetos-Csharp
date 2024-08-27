@@ -1,0 +1,15 @@
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.AssemblyInfoInputs.cache
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.AssemblyInfo.cs
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.csproj.CoreCompileInputs.cache
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.sourcelink.json
+/workspaces/Projetos-Csharp/aula06/bin/Debug/net8.0/aula06
+/workspaces/Projetos-Csharp/aula06/bin/Debug/net8.0/aula06.deps.json
+/workspaces/Projetos-Csharp/aula06/bin/Debug/net8.0/aula06.runtimeconfig.json
+/workspaces/Projetos-Csharp/aula06/bin/Debug/net8.0/aula06.dll
+/workspaces/Projetos-Csharp/aula06/bin/Debug/net8.0/aula06.pdb
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.dll
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/refint/aula06.dll
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.pdb
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/aula06.genruntimeconfig.cache
+/workspaces/Projetos-Csharp/aula06/obj/Debug/net8.0/ref/aula06.dll
