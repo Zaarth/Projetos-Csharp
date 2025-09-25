@@ -1,15 +1,17 @@
- // src/services/credenciaisFirebase.js
+// src/services/credenciaisFirebase.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDc_PHgKFxAHLGNiYM-rTgnJ79TAXTN9pA",
-  authDomain: "testerafael-1e68d.firebaseapp.com",
-  projectId: "testerafael-1e68d",
-  storageBucket: "testerafael-1e68d.firebasestorage.app",
-  messagingSenderId: "582659876868",
-  appId: "1:582659876868:web:d438cb6cbe4bd1db862d51"
+  apiKey: "AIzaSyApXJeVti0SGB9ZFvpgdtiHB7gZda5D9i4",
+  authDomain: "aulafirebase-8bffa.firebaseapp.com",
+  projectId: "aulafirebase-8bffa",
+  storageBucket: "aulafirebase-8bffa.firebasestorage.app",
+  messagingSenderId: "815292593378",
+  appId: "1:815292593378:web:98087bb631a77e23f0dabb",
+  measurementId: "G-CYQ1P20N3Q"
 };
+
 // Inicializa o App
 const appFirebase = initializeApp(firebaseConfig);
 

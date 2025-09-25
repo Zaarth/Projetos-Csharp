@@ -32,8 +32,8 @@ const Projects = () => {
     try {
       let q;
       
-      // Admin e Avaliador: buscam todos os projetos
-      if (tipo === 'admin' || tipo === 'avaliador') {
+      // administrador e Avaliador: buscam todos os projetos
+      if (tipo === 'administrador' || tipo === 'avaliador') {
         q = query(collection(db, 'projetos'));
       } 
       // Usuário normal: busca apenas projetos do usuário
@@ -44,7 +44,7 @@ const Projects = () => {
         );
       }
 
-      // Só executa a consulta se for admin/avaliador ou se existir userId
+      // Só executa a consulta se for administrador/avaliador ou se existir userId
       if (q) {
         const querySnapshot = await getDocs(q);
         const listaProjetos = [];
@@ -72,7 +72,7 @@ const Projects = () => {
     navigation.navigate('Detalhes do Projeto', { 
       projeto: item,
       // Passa a informação se o usuário pode editar
-      podeEditar: tipo === 'admin' || (tipo === 'normal' && item.criadoPor === userId)
+      podeEditar: tipo === 'administrador' || (tipo === 'normal' && item.criadoPor === userId)
     });
   };
 
@@ -100,8 +100,8 @@ const Projects = () => {
           <Icon name="visibility" size={24} color="#546A83" />
         </TouchableOpacity>
         
-        {/* Mostra botão de deletar apenas para admin ou dono do projeto (não mostra para avaliador) */}
-        {tipo !== 'avaliador' && (tipo === 'admin' || item.criadoPor === userId) && (
+        {/* Mostra botão de deletar apenas para administrador ou dono do projeto (não mostra para avaliador) */}
+        {tipo !== 'avaliador' && (tipo === 'administrador' || item.criadoPor === userId) && (
           <TouchableOpacity 
             onPress={() => handleDelete(item.id)} 
             style={localStyles.iconButton}
@@ -141,15 +141,13 @@ const Projects = () => {
         }
       />
 
-      {/* Mostrar botão de adicionar apenas para admin */}
-      {tipo === 'admin' && (
+      {/* Mostrar botão de adicionar apenas para administrador */}
         <TouchableOpacity
           style={localStyles.fab}
           onPress={() => navigation.navigate('Formulário de Projeto')}
         >
           <Icon name="add" size={30} color="#fff" />
         </TouchableOpacity>
-      )}
     </View>
   );
 };
